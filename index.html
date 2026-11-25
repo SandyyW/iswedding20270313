@@ -572,7 +572,7 @@
                 <div class="pt-2">
                     <button type="submit" id="submit-btn"
                             class="w-full py-4 px-6 rounded-full bg-gradient-to-r from-morandi-warm to-morandi-warmDark text-white font-medium text-base sm:text-lg tracking-[0.25em] shadow-lg shadow-morandi-warm/30 hover:shadow-xl hover:brightness-105 active:scale-[0.99] transition-all flex items-center justify-center space-x-2">
-                        <span>送出出席回函</span>
+                        <span>確認送出</span>
                         <span class="font-en text-sm tracking-widest uppercase opacity-90">SUBMIT</span>
                     </button>
                 </div>
@@ -632,9 +632,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             /* -------------------------------------------------------------
-             * 0. 導覽列捲動對比度自動切換（避免往下捲動到淺色區塊時文字看不清楚）
+             * 0. 導覽列捲動對比度自動切換（進入出席回函區塊時顯示半透明霧面質感）
              * ------------------------------------------------------------- */
             const mainHeader = document.getElementById('main-header');
+            const rsvpSection = document.getElementById('rsvp');
             const navBrand = document.getElementById('nav-brand');
             const navDate = document.getElementById('nav-date');
             const navTagline = document.getElementById('nav-tagline');
@@ -642,6 +643,17 @@
 
             function handleHeaderScroll() {
                 const isScrolled = window.scrollY > 80;
+                const headerHeight = mainHeader ? mainHeader.offsetHeight : 72;
+                const isInRsvp = rsvpSection ? (rsvpSection.getBoundingClientRect().top <= headerHeight) : false;
+
+                if (isInRsvp) {
+                    mainHeader.classList.remove('bg-transparent');
+                    mainHeader.classList.add('bg-morandi-cream/85', 'backdrop-blur-md', 'shadow-[0_4px_20px_-6px_rgba(58,53,50,0.08)]', 'border-b', 'border-morandi-warm/20');
+                } else {
+                    mainHeader.classList.add('bg-transparent');
+                    mainHeader.classList.remove('bg-morandi-cream/85', 'backdrop-blur-md', 'shadow-[0_4px_20px_-6px_rgba(58,53,50,0.08)]', 'border-b', 'border-morandi-warm/20');
+                }
+
                 if (isScrolled) {
                     navBrand.classList.remove('text-white', 'drop-shadow-[0_2px_6px_rgba(0,0,0,0.65)]');
                     navBrand.classList.add('text-morandi-ink', 'drop-shadow-[0_1px_4px_rgba(255,255,255,0.9)]');
@@ -853,7 +865,7 @@
 
                 isSubmitting = false;
                 submitBtn.disabled = false;
-                submitBtn.innerHTML = '<span>送出出席回函</span><span class="font-en text-sm tracking-widest uppercase opacity-90">SUBMIT</span>';
+                submitBtn.innerHTML = '<span>確認送出</span><span class="font-en text-sm tracking-widest uppercase opacity-90">SUBMIT</span>';
 
                 // 更新感謝視窗內文
                 modalDescText.innerHTML = '感謝您的填寫與祝福 ♥<br>我們已將您的心意珍藏，<br>期待在 2027.03.13 婚禮上與您相見！';
