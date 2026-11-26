@@ -207,10 +207,10 @@
 
         <!-- 底部日期區塊與向下引導指示 -->
         <div class="relative z-10 pb-8 flex flex-col items-center">
-            <div class="mb-4 inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/40 text-white text-xs sm:text-sm tracking-[0.22em]">
+            <div class="mb-4 inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/30 backdrop-blur-md border border-white/50 text-morandi-ink text-xs sm:text-sm tracking-[0.2em] shadow-sm">
                 <span class="font-en font-semibold">2027 . 03 . 13</span>
-                <span class="text-white/60">|</span>
-                <span class="font-en text-[10px] sm:text-xs tracking-[0.2em] opacity-90">SATURDAY</span>
+                <span class="text-morandi-ink/60">|</span>
+                <span class="font-en text-[10px] sm:text-xs font-medium tracking-[0.18em]">SATURDAY</span>
             </div>
 
             <a href="#countdown-section" aria-label="向下捲動" class="animate-float inline-flex flex-col items-center text-morandi-ink/80 hover:text-morandi-warm transition-colors">
@@ -394,23 +394,23 @@
 
                 <!-- 【常駐欄位 1】您的姓名 -->
                 <div>
-                    <label for="field-name" class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-2">
+                    <label for="field-name" class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-2">
                         您的姓名 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">NAME</span>
                         <span class="text-morandi-warm ml-1">*</span>
                     </label>
                     <input type="text" id="field-name" name="entry.1001058131" required placeholder="請輸入您的全名"
-                           class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-morandi-ink placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
+                           class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-sm sm:text-base text-morandi-ink placeholder:text-xs sm:placeholder:text-sm placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
                 </div>
 
                 <!-- 【常駐欄位 2】與新人的關係 (下拉選單保持純中文) -->
                 <div>
-                    <label for="field-relation" class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-2">
+                    <label for="field-relation" class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-2">
                         與新人的關係 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">RELATIONSHIP</span>
                         <span class="text-morandi-warm ml-1">*</span>
                     </label>
                     <div class="relative">
                         <select id="field-relation" name="entry.515594168" required
-                                class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-morandi-ink appearance-none focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
+                                class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-xs sm:text-sm text-morandi-ink appearance-none focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
                             <option value="" disabled selected>請選擇與新人的關係</option>
                             <option value="新郎的家人親戚">新郎的家人親戚</option>
                             <option value="新郎的同學、朋友、同事">新郎的同學、朋友、同事</option>
@@ -427,7 +427,7 @@
 
                 <!-- 【常駐欄位 3】當天是否出席 (單選按鈕，必填) -->
                 <div>
-                    <label class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-3">
+                    <label class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-3">
                         當天是否出席 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">ATTENDANCE</span>
                         <span class="text-morandi-warm ml-1">*</span>
                     </label>
@@ -455,24 +455,24 @@
                     
                     <!-- 1. 當天出席總人數 -->
                     <div>
-                        <label for="field-guests" class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-2">
+                        <label for="field-guests" class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-2">
                             當天出席總人數 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">GUESTS</span>
                             <span class="text-xs text-morandi-muted font-normal block sm:inline sm:ml-1">[包含自己以及需要座位的小孩唷]</span>
                             <span class="text-morandi-warm ml-1">*</span>
                         </label>
                         <input type="number" id="field-guests" name="entry.1224930740" step="1" placeholder="請輸入出席總人數（至少 1 位）"
-                               class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-morandi-ink placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
+                               class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-sm sm:text-base text-morandi-ink placeholder:text-xs sm:placeholder:text-sm placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
                     </div>
 
                     <!-- 2. 兒童椅需求數量 (下拉選單保持純中文) -->
                     <div>
-                        <label for="field-child-seat" class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-2">
+                        <label for="field-child-seat" class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-2">
                             兒童椅需求數量 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">HIGH CHAIRS</span>
                             <span class="text-morandi-warm ml-1">*</span>
                         </label>
                         <div class="relative">
                             <select id="field-child-seat" name="entry.1620384439"
-                                    class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-morandi-ink appearance-none focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
+                                    class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-xs sm:text-sm text-morandi-ink appearance-none focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
                                 <option value="" disabled selected>請選擇兒童椅數量</option>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -489,13 +489,13 @@
 
                     <!-- 3. 素食餐點需求人數 (下拉選單保持純中文) -->
                     <div>
-                        <label for="field-vegan" class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-2">
+                        <label for="field-vegan" class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-2">
                             素食餐點需求人數 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">VEGETARIAN MEALS</span>
                             <span class="text-morandi-warm ml-1">*</span>
                         </label>
                         <div class="relative">
                             <select id="field-vegan" name="entry.2041414883"
-                                    class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-morandi-ink appearance-none focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
+                                    class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-xs sm:text-sm text-morandi-ink appearance-none focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
                                 <option value="" disabled selected>請選擇素食餐點人數</option>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -512,60 +512,61 @@
 
                     <!-- 4. 希望收到喜帖的方式 -->
                     <div>
-                        <label class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-3">
+                        <label class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-3">
                             希望收到喜帖的方式 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">INVITATION TYPE</span>
                             <span class="text-morandi-warm ml-1">*</span>
                         </label>
                         <div class="space-y-2.5">
-                            <label class="flex items-center p-3.5 rounded-xl border border-morandi-warm/25 bg-morandi-cream/40 cursor-pointer hover:bg-morandi-warm/10 transition-all has-[:checked]:border-morandi-warm has-[:checked]:bg-morandi-warm/15">
+                            <label id="option-paper-invite" class="flex items-center p-3.5 rounded-xl border border-morandi-warm/25 bg-morandi-cream/40 cursor-pointer hover:bg-morandi-warm/10 transition-all has-[:checked]:border-morandi-warm has-[:checked]:bg-morandi-warm/15">
                                 <input type="radio" name="entry.843419276" value="紙本喜帖" class="invite-type-radio w-4 h-4 accent-[#d4a373]">
                                 <span class="ml-3 text-sm sm:text-base text-morandi-ink">紙本喜帖</span>
                             </label>
 
-                            <label class="flex items-center p-3.5 rounded-xl border border-morandi-warm/25 bg-morandi-cream/40 cursor-pointer hover:bg-morandi-warm/10 transition-all has-[:checked]:border-morandi-warm has-[:checked]:bg-morandi-warm/15">
+                            <label id="option-digital-invite" class="flex items-center p-3.5 rounded-xl border border-morandi-warm/25 bg-morandi-cream/40 cursor-pointer hover:bg-morandi-warm/10 transition-all has-[:checked]:border-morandi-warm has-[:checked]:bg-morandi-warm/15">
                                 <input type="radio" name="entry.843419276" value="電子喜帖" class="invite-type-radio w-4 h-4 accent-[#d4a373]">
                                 <span class="ml-3 text-sm sm:text-base text-morandi-ink">電子喜帖</span>
                             </label>
 
-                            <label class="flex items-center p-3.5 rounded-xl border border-morandi-warm/25 bg-morandi-cream/40 cursor-pointer hover:bg-morandi-warm/10 transition-all has-[:checked]:border-morandi-warm has-[:checked]:bg-morandi-warm/15">
+                            <label id="option-both-invite" class="flex items-center p-3.5 rounded-xl border border-morandi-warm/25 bg-morandi-cream/40 cursor-pointer hover:bg-morandi-warm/10 transition-all has-[:checked]:border-morandi-warm has-[:checked]:bg-morandi-warm/15">
                                 <input type="radio" name="entry.843419276" value="小孩才做選擇，我兩個都要~" class="invite-type-radio w-4 h-4 accent-[#d4a373]">
                                 <span class="ml-3 text-sm sm:text-base text-morandi-ink">小孩才做選擇，我兩個都要~</span>
                             </label>
-                        </div>
-                    </div>
 
-                    <!-- ==================== 【第二層連動區塊：依喜帖方式展開】 ==================== -->
-                    <div id="layer-2-section" class="space-y-6">
-                        <!-- 紙本喜帖收件地址 -->
-                        <div id="wrap-address" class="hidden">
-                            <label for="field-address" class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-2">
-                                紙本喜帖收件地址 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">MAILING ADDRESS</span>
-                                <span class="text-xs text-morandi-muted font-normal block sm:inline sm:ml-1">[請填寫郵遞區號與詳細地址唷]</span>
-                                <span class="text-morandi-warm ml-1">*</span>
-                            </label>
-                            <input type="text" id="field-address" name="entry.342019937" placeholder="例如：407 台中市西屯區..."
-                                   class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-morandi-ink placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
-                        </div>
+                            <!-- 電子喜帖 Line 傳送與 E-mail 說明提示（依點選選項動態插入對應位置） -->
+                            <div id="digital-invite-hint" class="hidden p-3.5 rounded-xl bg-morandi-sage/10 border border-morandi-sage/30 text-xs sm:text-sm text-morandi-ink/90 leading-relaxed tracking-wider">
+                                <p>電子喜帖我們會直接透過Line傳給你喲<br>若也希望寄到信箱的話，請在下方幫我們填寫E-mail摟～</p>
+                            </div>
 
-                        <!-- 電子喜帖收件 E-mail -->
-                        <div id="wrap-email" class="hidden">
-                            <label for="field-email" class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-2">
-                                電子喜帖收件E-mail <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">E-MAIL</span>
-                                <span class="text-morandi-warm ml-1">*</span>
-                            </label>
-                            <input type="email" id="field-email" name="entry.187616475" placeholder="example@mail.com"
-                                   class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-morandi-ink placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
+                            <!-- 紙本喜帖收件地址（依點選選項動態插入對應位置） -->
+                            <div id="wrap-address" class="hidden pt-1 pb-2">
+                                <label for="field-address" class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-2">
+                                    紙本喜帖收件地址 <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">MAILING ADDRESS</span>
+                                    <span class="text-xs text-morandi-muted font-normal block sm:inline sm:ml-1">[請填寫郵遞區號與詳細地址唷]</span>
+                                    <span class="text-morandi-warm ml-1">*</span>
+                                </label>
+                                <input type="text" id="field-address" name="entry.342019937" placeholder="例如：407 台中市西屯區..."
+                                       class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-sm sm:text-base text-morandi-ink placeholder:text-xs sm:placeholder:text-sm placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
+                            </div>
+
+                            <!-- 電子喜帖收件 E-mail（依點選選項動態插入對應位置） -->
+                            <div id="wrap-email" class="hidden pt-1 pb-2">
+                                <label for="field-email" class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-2">
+                                    電子喜帖收件E-mail <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">E-MAIL</span>
+                                </label>
+                                <input type="email" id="field-email" name="entry.187616475" placeholder="example@mail.com"
+                                       class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-sm sm:text-base text-morandi-ink placeholder:text-xs sm:placeholder:text-sm placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- 【常駐欄位 4】♥ 想對我們說的悄悄話與祝福 ♥ (非必填，無論是否出席都顯示) -->
                 <div class="pt-4 border-t border-morandi-warm/15">
-                    <label for="field-message" class="block text-sm sm:text-base font-medium text-morandi-ink tracking-wider mb-2">
+                    <label for="field-message" class="block text-base sm:text-lg font-medium text-morandi-ink tracking-wider mb-2">
                         ♥ 想對我們說的悄悄話與祝福 ♥ <span class="font-en text-xs sm:text-sm text-morandi-warm tracking-widest uppercase ml-1">BLESSINGS</span>
                     </label>
-                    <textarea id="field-message" name="entry.506093850" rows="4" placeholder="寫下給柏成與詩評的祝福話語..."
-                              class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-morandi-ink placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all resize-none"></textarea>
+                    <textarea id="field-message" name="entry.506093850" rows="4" placeholder="寫下給柏成與詩評的祝福～♥&#10;還有任何你想留給我們訊息都可以喲"
+                              class="w-full px-4 py-3 rounded-xl bg-morandi-cream/60 border border-morandi-warm/30 text-sm sm:text-base text-morandi-ink placeholder:text-xs sm:placeholder:text-sm placeholder-morandi-muted/50 focus:outline-none focus:border-morandi-warm focus:ring-2 focus:ring-morandi-warm/20 transition-all resize-none"></textarea>
                 </div>
 
                 <!-- 送出按鈕 -->
@@ -738,9 +739,17 @@
             const fieldAddress = document.getElementById('field-address');
             const wrapEmail = document.getElementById('wrap-email');
             const fieldEmail = document.getElementById('field-email');
+            const optionPaperInvite = document.getElementById('option-paper-invite');
+            const optionDigitalInvite = document.getElementById('option-digital-invite');
+            const optionBothInvite = document.getElementById('option-both-invite');
+            const digitalInviteHint = document.getElementById('digital-invite-hint');
 
             // 重置第二層狀態函式
             function resetLayer2() {
+                if (digitalInviteHint) {
+                    digitalInviteHint.classList.add('hidden');
+                }
+
                 wrapAddress.classList.add('hidden');
                 fieldAddress.required = false;
                 fieldAddress.value = '';
@@ -804,7 +813,12 @@
                     const inviteChoice = e.target.value;
 
                     if (inviteChoice === '紙本喜帖') {
-                        wrapAddress.classList.remove('hidden');
+                        if (digitalInviteHint) digitalInviteHint.classList.add('hidden');
+
+                        if (optionPaperInvite && wrapAddress) {
+                            optionPaperInvite.insertAdjacentElement('afterend', wrapAddress);
+                            wrapAddress.classList.remove('hidden');
+                        }
                         fieldAddress.required = true;
 
                         wrapEmail.classList.add('hidden');
@@ -812,19 +826,37 @@
                         fieldEmail.value = '';
 
                     } else if (inviteChoice === '電子喜帖') {
-                        wrapEmail.classList.remove('hidden');
-                        fieldEmail.required = true;
+                        if (optionDigitalInvite && digitalInviteHint) {
+                            optionDigitalInvite.insertAdjacentElement('afterend', digitalInviteHint);
+                            digitalInviteHint.classList.remove('hidden');
+
+                            if (wrapEmail) {
+                                digitalInviteHint.insertAdjacentElement('afterend', wrapEmail);
+                                wrapEmail.classList.remove('hidden');
+                            }
+                        }
+                        fieldEmail.required = false;
 
                         wrapAddress.classList.add('hidden');
                         fieldAddress.required = false;
                         fieldAddress.value = '';
 
                     } else if (inviteChoice === '小孩才做選擇，我兩個都要~') {
-                        wrapAddress.classList.remove('hidden');
-                        fieldAddress.required = true;
+                        if (optionBothInvite && digitalInviteHint) {
+                            optionBothInvite.insertAdjacentElement('afterend', digitalInviteHint);
+                            digitalInviteHint.classList.remove('hidden');
 
-                        wrapEmail.classList.remove('hidden');
-                        fieldEmail.required = true;
+                            if (wrapAddress) {
+                                digitalInviteHint.insertAdjacentElement('afterend', wrapAddress);
+                                wrapAddress.classList.remove('hidden');
+                            }
+                            if (wrapEmail) {
+                                wrapAddress.insertAdjacentElement('afterend', wrapEmail);
+                                wrapEmail.classList.remove('hidden');
+                            }
+                        }
+                        fieldAddress.required = true;
+                        fieldEmail.required = false;
                     }
                 });
             });
